@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.lastproject">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LastProject">
+        <activity android:name=".LodingActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".AdminShopListActivity" />
+        <activity android:name=".MenuActivity" />
+        <activity android:name=".UpdateMenuActivity" />
+        <activity android:name=".AdminMenuActivity" />
+        <activity android:name=".UpdateActivity" />
+        <activity android:name=".AdminShopActivity" />
+        <activity android:name=".AddMenuActivity" />
+        <activity android:name=".ShopActivity" />
+        <activity android:name=".AddActivity" />
+        <activity android:name=".ShopListActivity" />
+        <activity android:name=".AdminActivity" />
+        <activity android:name=".JoinActivity" />
+        <activity android:name=".LoginActivity" />
+        <activity android:name=".SelectActivity" />
+        <activity android:name=".MyActivity" />
+        <activity android:name=".MainActivity">
+        </activity>
+    </application>
+
+</manifest>

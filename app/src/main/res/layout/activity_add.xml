@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddActivity"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="15dp"
+        android:background="@drawable/border">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/back"
+            android:id="@+id/imgBack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="ADMIN"
+            android:textSize="25dp"
+            android:layout_marginRight="45dp"
+            android:fontFamily="@font/font_b"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="15dp"
+        android:orientation="vertical"
+        android:layout_weight="1">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:hint="매장 이미지"
+            android:id="@+id/imageShop"
+            android:src="@drawable/ready"
+            android:layout_marginBottom="10dp"
+            android:background="@drawable/navigation_shape"
+            android:layout_gravity="center"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="매장 코드"
+            android:id="@+id/editShopID"
+            android:layout_marginBottom="25dp"
+            android:fontFamily="@font/font_b"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="매장 이름"
+            android:id="@+id/editShopName"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/font_b"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="15dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="매장 분류"
+                android:textSize="20dp"
+                android:fontFamily="@font/font_b"/>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp">
+                <TableRow>
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="한식"
+                        android:padding="5dp"
+                        android:id="@+id/checkKorean"
+                        android:fontFamily="@font/font_b" />
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="분식"
+                        android:padding="5dp"
+                        android:id="@+id/checkSnack"
+                        android:fontFamily="@font/font_b"/>
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="일식"
+                        android:padding="5dp"
+                        android:id="@+id/checkJapanese"
+                        android:fontFamily="@font/font_b"/>
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="중식"
+                        android:padding="5dp"
+                        android:id="@+id/checkChinese"
+                        android:fontFamily="@font/font_b"/>
+
+                    <CheckBox
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="야식"
+                        android:padding="5dp"
+                        android:id="@+id/checkMidnight"
+                        android:fontFamily="@font/font_b"/>
+                </TableRow>
+            </TableLayout>
+        </LinearLayout>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="매장 주소"
+            android:id="@+id/editShopLoca"
+            android:layout_marginBottom="10dp"
+            android:fontFamily="@font/font_b"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|bottom"
+        android:padding="15dp"
+        android:orientation="horizontal">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매장 추가"
+            android:textColor="#4C4C4C"
+            android:background="#00ff0000"
+            android:layout_weight="1"
+            android:id="@+id/btnShopInsert"
+            android:textSize="15dp"
+            android:fontFamily="@font/font_b"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>
